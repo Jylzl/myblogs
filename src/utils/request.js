@@ -10,11 +10,10 @@ import {
 import {
   getToken
 } from '@/utils/auth'
-console.log(process.env.VUE_APP_API_URL)
 // create an axios instance
 const service = axios.create({
   withCredentials: true,
-  baseURL: process.env.VUE_APP_API_URL ? process.env.VUE_APP_API_URL : 'http://127.0.0.1:5000/api', // api 的 base_url
+  baseURL: process.env.VUE_APP_API_URL, // api 的 base_url
   timeout: 5000 // request timeout
 })
 
