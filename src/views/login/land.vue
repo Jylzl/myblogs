@@ -118,7 +118,7 @@ export default {
               setTimeout(() => {
                 // 登陆成功后1s跳转到列表页
                 this.$router.push({
-                  name: "ArticleList",
+                  name: "articlelist",
                   params: {
                     userid: landUserId
                   }
