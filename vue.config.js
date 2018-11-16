@@ -11,7 +11,7 @@ module.exports = {
         hotOnly: false,
         proxy: { //配置跨域
             '/api': {
-                target: "htt",
+                target: "http://127.0.0.1:5000",
                 ws: true,
                 changOrigin: true,
                 pathRewrite: {
